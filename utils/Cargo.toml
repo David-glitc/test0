@@ -1,0 +1,16 @@
+[package]
+name = "utils"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4"
+thiserror = "1.0"
+
+
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3

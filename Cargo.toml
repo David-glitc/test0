@@ -1,0 +1,39 @@
+[package]
+name = "dot0"
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+polkadot-sdk = "0.7.0"
+pallet-contracts = "38.0.0"
+pallet-contracts-primitives = "29.0.0"
+risc0-zkvm-guest = "0.11.1"
+risc-zkvm = {workspace = true}
+ark-bls12-377 = { version = "0.5.0", default-features = false }
+ark-bls12-377-ext = { version = "0.4.1", default-features = false }
+ark-bls12-381 = { version = "0.5.0", default-features = false }
+ark-bls12-381-ext = { version = "0.4.1", default-features = false }
+ark-bw6-761 = { version = "0.5.0", default-features = false }
+ark-bw6-761-ext = { version = "0.4.1", default-features = false }
+ark-ec = { version = "0.5.0", default-features = false }
+ark-ed-on-bls12-377 = { version = "0.5.0", default-features = false }
+ark-ed-on-bls12-377-ext = { version = "0.4.1", default-features = false }
+ark-ed-on-bls12-381-bandersnatch = { version = "0.5.0", default-features = false }
+ark-ed-on-bls12-381-bandersnatch-ext = { version = "0.4.1", default-features = false }
+ark-scale = { version = "0.0.12", default-features = false }
+
+[workspace]
+members = [
+    "core",       
+    "zkvm",   
+    "utils",  
+    "examples", "cli", "src/host", 
+]
+
+[workspace.package]
+edition = "2021"
+repository = "https://github.com/Daivd-glitc/dot_0"
+
+[profile.dev]
+opt-level = 1
+debug = true

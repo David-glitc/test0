@@ -1,0 +1,9 @@
+[package]
+name = "zkvm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ink_lang = "3.0" # Replace with the latest Ink! version compatible with Polkadot
+ink_storage = "5.0.0"
+risc0-zkvm = { version = "1.1.2" }

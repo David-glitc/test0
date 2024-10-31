@@ -1,0 +1,24 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-ec = { version = "0.5.0" }
+ark-ff = { version = "0.5.0", features = ["derive"] }
+ark-snark = { version = "0.5.0" } 
+ark-serialize = "0.5.0" 
+ark-crypto = "0.5.0"
+ark-groth16 = "0.5.0"
+ark-crypto-primitives = "0.5.0"
+serde = { version = "1.0", features = ["derive"] }
+ark-std = "0.5.0"
+wasm-bindgen = "0.2"
+ark-bn254 = "0.5.0"
+ark-bls12-381 = "0.5.0"
+ark-gm17 = "0.3.0"
+ark-r1cs-std = "0.5.0"
+ark-poly-commit = "0.5.0"
+ark-relations = "0.5.1"
+ark-bls12-377 = "0.5.0"
+
